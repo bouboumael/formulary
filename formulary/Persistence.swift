@@ -6,16 +6,20 @@
 //
 
 import CoreData
+import Fakery
 
 struct PersistenceController {
     static let shared = PersistenceController()
 
     static var preview: PersistenceController = {
+        let faker = Faker()
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
         for _ in 0..<10 {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
+            let newItem = User(context: viewContext)
+            newItem.createdAt = Date()
+            newItem.lastname = faker.name.lastName()
+            newItem.firstname = faker.name.firstName()
         }
         do {
             try viewContext.save()

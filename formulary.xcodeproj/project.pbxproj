@@ -16,6 +16,7 @@
 		D3E2F6C62A868829007399EC /* formularyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E2F6C52A868829007399EC /* formularyTests.swift */; };
 		D3E2F6D02A868829007399EC /* formularyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E2F6CF2A868829007399EC /* formularyUITests.swift */; };
 		D3E2F6D22A868829007399EC /* formularyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E2F6D12A868829007399EC /* formularyUITestsLaunchTests.swift */; };
+		D3E2F6E02A868B1E007399EC /* Fakery in Frameworks */ = {isa = PBXBuildFile; productRef = D3E2F6DF2A868B1E007399EC /* Fakery */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3E2F6E02A868B1E007399EC /* Fakery in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +151,9 @@
 			dependencies = (
 			);
 			name = formulary;
+			packageProductDependencies = (
+				D3E2F6DF2A868B1E007399EC /* Fakery */,
+			);
 			productName = formulary;
 			productReference = D3E2F6AC2A868828007399EC /* formulary.app */;
 			productType = "com.apple.product-type.application";
@@ -221,6 +226,9 @@
 				Base,
 			);
 			mainGroup = D3E2F6A32A868828007399EC;
+			packageReferences = (
+				D3E2F6DE2A868B1E007399EC /* XCRemoteSwiftPackageReference "Fakery" */,
+			);
 			productRefGroup = D3E2F6AD2A868828007399EC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -591,6 +599,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D3E2F6DE2A868B1E007399EC /* XCRemoteSwiftPackageReference "Fakery" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vadymmarkov/Fakery.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D3E2F6DF2A868B1E007399EC /* Fakery */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3E2F6DE2A868B1E007399EC /* XCRemoteSwiftPackageReference "Fakery" */;
+			productName = Fakery;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		D3E2F6BA2A868829007399EC /* formulary.xcdatamodeld */ = {
