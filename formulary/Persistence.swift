@@ -15,12 +15,7 @@ struct PersistenceController {
         let faker = Faker()
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
-        for _ in 0..<10 {
-            let newItem = User(context: viewContext)
-            newItem.createdAt = Date()
-            newItem.lastname = faker.name.lastName()
-            newItem.firstname = faker.name.firstName()
-        }
+        
         do {
             try viewContext.save()
         } catch {

@@ -17,6 +17,7 @@
 		D3E2F6D02A868829007399EC /* formularyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E2F6CF2A868829007399EC /* formularyUITests.swift */; };
 		D3E2F6D22A868829007399EC /* formularyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E2F6D12A868829007399EC /* formularyUITestsLaunchTests.swift */; };
 		D3E2F6E02A868B1E007399EC /* Fakery in Frameworks */ = {isa = PBXBuildFile; productRef = D3E2F6DF2A868B1E007399EC /* Fakery */; };
+		D3E2F6E22A86D643007399EC /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E2F6E12A86D643007399EC /* UserModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		D3E2F6CB2A868829007399EC /* formularyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = formularyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3E2F6CF2A868829007399EC /* formularyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = formularyUITests.swift; sourceTree = "<group>"; };
 		D3E2F6D12A868829007399EC /* formularyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = formularyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D3E2F6E12A86D643007399EC /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				D3E2F6B82A868829007399EC /* Persistence.swift */,
 				D3E2F6BA2A868829007399EC /* formulary.xcdatamodeld */,
 				D3E2F6B52A868829007399EC /* Preview Content */,
+				D3E2F6E12A86D643007399EC /* UserModel.swift */,
 			);
 			path = formulary;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				D3E2F6B92A868829007399EC /* Persistence.swift in Sources */,
 				D3E2F6B22A868828007399EC /* ContentView.swift in Sources */,
 				D3E2F6B02A868828007399EC /* formularyApp.swift in Sources */,
+				D3E2F6E22A86D643007399EC /* UserModel.swift in Sources */,
 				D3E2F6BC2A868829007399EC /* formulary.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
